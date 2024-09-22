@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+header h1 img {
+    max-width: 200px; 
+    height: auto;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 2.5rem;
+    font-family: "Dancing Script", cursive; 
+    margin-top: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background: #fad02c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero {
+    background: url('/assets/hero-image.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2rem;
+}
+
+#services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#contact {
+    padding: 2rem 0;
+    
+}
+
+#services h2, #contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.service {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    margin: 1.5rem 1.5rem auto;
+}
+
+.service h3 {
+    font-family: "Dancing Script", cursive; 
+    font-size: 2.5rem;
+}
+
+.service img {
+    max-width: 100%; 
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* Oculta las imágenes que no están activas */
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slider-images img {
+    width: 100%;
+    border-radius: 5px;
+    display: none; /* Oculta todas las imágenes inicialmente */
+}
+
+.slider-images img.active {
+    display: block; /* Muestra la imagen activa */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.cta-button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer; 
+    text-align: center; 
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada servicio ocupa el 100% del ancho */
+    }
+}

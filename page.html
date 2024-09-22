@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos XYZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Fascinate+Inline&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <img src="/assets/logo.png" alt="Logo de Eventos XYZ">
+            </h1>
+            <p>Transformamos tus ideas en momentos inolvidables, dejamos huellas en tus eventos</p>
+            <a href="#contact" class="cta-button">Solicita Información</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Tu Evento, Nuestra Pasión</h2>
+            <p>Desde bodas y fiestas privadas hasta eventos corporativos, estamos aquí para hacer realidad tus sueños.</p>
+            <a href="#services" class="cta-button">Ver Servicios</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service">
+                <h3>Bodas</h3>
+                <div class="slider">
+                    <div class="slider-images">
+                        <img src="/assets/bodas.jpg" alt="Boda 1">
+                        <img src="/assets/bodas2.jpg" alt="Boda 2">
+                        <img src="/assets/bodas3.jpg" alt="Boda 3">
+                    </div>
+                    <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <p>Diseñamos bodas personalizadas para que tu día sea perfecto.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Eventos Corporativos</h3>
+                <div class="slider">
+                    <div class="slider-images">
+                        <img src="/assets/corporativo.jpg" alt="Evento Corporativo 1">
+                        <img src="/assets/corporativo2.jpg" alt="Evento Corporativo 2">
+                        <img src="/assets/corporativo3.jpg" alt="Evento Corporativo 3">
+                    </div>
+                    <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <p>Organizamos eventos de empresa que impresionarán a tus clientes y empleados.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Fiestas Privadas</h3>
+                <div class="slider">
+                    <div class="slider-images">
+                        <img src="/assets/fiesta.jpg" alt="Fiesta 1">
+                        <img src="/assets/fiesta2.jpg" alt="Fiesta 2">
+                        <img src="/assets/fiesta3.jpg" alt="Fiesta 3">
+                    </div>
+                    <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(this)">&#10095;</button>
+                </div>
+                <p>Desde cumpleaños hasta aniversarios, hacemos que cada celebración sea especial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="cta-button">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Eventos XYZ. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
