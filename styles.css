@@ -62,7 +62,10 @@ header p {
 #services {
     padding: 2rem 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 #contact {
     padding: 2rem 0;
@@ -84,8 +87,8 @@ header p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
     width: 100%;
-    max-width: 350px;
-    margin: 1.5rem 1.5rem auto;
+    max-width: 320px;
+   
 }
 
 .service h3 {
@@ -174,6 +177,41 @@ button.cta-button {
     cursor: pointer; 
     text-align: center; 
 }
+/* Centrar el contenedor de botones */
+.contact-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio superior para separar de otros elementos */
+}
+
+/* Centrar el contenedor de íconos */
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 20px; /* Espacio entre los íconos */
+    margin-top: 20px; /* Espacio superior para separar de otros elementos */
+}
+
+.icon-button {
+    color: #25D366; /* Color inicial para WhatsApp */
+    font-size: 2rem; /* Tamaño del ícono */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-button:nth-child(2) {
+    color: #007BFF; /* Color para el icono de correo */
+}
+
+.icon-button:hover {
+    color:#938e8e; /* Cambia de color en el ícono de WhatsApp al pasar */
+}
+
+.icon-button:nth-child(2):hover {
+    color: #938e8e; /* Cambia de color en el ícono de correo al pasar */
+}
+
 
 footer {
     background: #2c3e50;
@@ -182,10 +220,26 @@ footer {
     padding: 1rem 0;
 }
 
+/* Ajuste para pantallas medianas */
+@media (max-width: 1024px) {
+    #services .container {
+        flex-direction: column; /* Apila los servicios en columna en pantallas medianas o pequeñas */
+    }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
     .service {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada servicio ocupa el 100% del ancho */
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    #services .container {
+        flex-direction: column; /* Apila los servicios en columna */
+    }
+
+    .service {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
